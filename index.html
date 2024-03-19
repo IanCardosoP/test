@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Formulario Completo</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+  <div id="header">
+    <h1>3.2 Actividad. Trabajando con formularios y PHP</h1>
+    <h2>Ian Cardoso Pillado</h2>
+  </div>
+  <div id="main">
+    <h1>Formulario de Registro</h1>
+
+    <form action="procesar.php" method="post" enctype="multipart/form-data">
+
+      <!-- Sección para la actividad
+        3.3 Actividad integradora. Gestión de Formularios y archivos en PHP
+        Agregar un campo poara subir imagen de perfil 
+        El campo no quede vacío
+        Que sea un archivo tipo jpg o png
+        Que el tamaño no exceda de 1 Mb
+    -->
+      <!-- <label>Foto de perfil: </label>
+      <input type="file" name="fotoPerfil"><br><br> -->
+      <!-- End Sección para la actividad 3.3 Actividad integradora  -->
+
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre"><br><br>
+
+      <label for="direccion">Dirección:</label>
+      <input type="text" id="direccion" name="direccion"><br><br>
+
+      <label for="email">Correo Electrónico:</label>
+      <input type="text" id="email" name="email"><br><br>
+
+      <label for="confirm_email">Confirmar Correo Electrónico:</label>
+      <input type="text" id="confirm_email" name="confirm_email"><br><br>
+
+      <label for="telefono">Teléfono:</label>
+      <input type="tel" id="telefono" name="telefono"><br><br>
+
+      <label>Estado Civil:</label><br>
+      <input type="radio" id="casado" name="estado_civil" value="casado">
+      <label for="casado">Casado</label><br>
+      <input type="radio" id="soltero" name="estado_civil" value="soltero">
+      <label for="soltero">Soltero</label><br>
+      <input type="radio" id="viudo" name="estado_civil" value="viudo">
+      <label for="viudo">Viudo</label><br>
+      <input type="radio" id="divorciado" name="estado_civil" value="divorciado">
+      <label for="divorciado">Divorciado</label><br><br>
+
+      <label>Aficiones:</label><br>
+      <input type="checkbox" id="leer" name="aficiones[]" value="leer">
+      <label for="leer">Leer</label><br>
+      <input type="checkbox" id="cine" name="aficiones[]" value="cine">
+      <label for="cine">Ir al cine</label><br>
+      <input type="checkbox" id="viajar" name="aficiones[]" value="viajar">
+      <label for="viajar">Viajar</label><br><br>
+
+      <label for="estado">Estado:</label>
+      <select id="estado" name="estado">
+        <option value="" disabled selected>-----</option>
+        <option value="Aguascalientes">Aguascalientes</option>
+        <option value="Baja California">Baja California</option>
+        <option value="CDMX">CDMX</option>
+      </select><br><br>
+      
+      <input type="submit" value="Enviar"> 
+    </form>
+  </div>
+</body>
+
+</html>

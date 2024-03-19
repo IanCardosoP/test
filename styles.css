@@ -1,0 +1,73 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2; /* Color de fondo */
+    margin: 0;
+    padding: 0;
+}
+h1 {
+    font-size: 140%;
+    text-align: left; 
+}
+
+h2 {
+    font-size: 120%;
+    text-align: left; 
+}
+
+#header {
+    background-color: #333; /* Color de fondo */
+    color: white; /* Color del texto */
+    padding: 20px;
+    text-align: center;
+}
+
+#main {
+    margin: 20px auto; /* Margen superior e inferior de 20px, centrado horizontalmente */
+    width: 60%; /* Tamaño del 60% del viewport */
+    background-color: white; /* Color de fondo */
+    padding: 20px;
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+input[type="submit"], #button {
+    background-color: #4CAF50; /* Color de fondo */
+    color: white; /* Color del texto */
+    padding: 10px 20px; /* Padding */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cursor apuntador */
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049; /* Cambiar color de fondo al pasar el ratón */
+}
+
+table {
+    border-collapse: collapse;
+    width: 50%;
+    margin: 20px auto; /* Margen para centrar la tabla y darle espacio */
+    border: 2px solid #ccc; /* Borde para la tabla */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+}
+
+th, td {
+    border: 1px solid #ddd; /* Borde para las celdas */
+    padding: 12px; /* Espaciado interno */
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2; /* Color de fondo para las celdas de encabezado */
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9; /* Color de fondo alternativo para filas pares */
+}
+.fotoPerfil {
+    display: block; /* Para asegurar que ocupe el espacio completo del contenedor */
+    margin: 0 auto; /* Para centrar horizontalmente */
+    max-width: 200px; /* Limitar el ancho máximo a 400px */
+    height: auto; /* Para mantener la relación de aspecto */
+}
