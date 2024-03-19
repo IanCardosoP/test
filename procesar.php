@@ -129,9 +129,8 @@ $conn = new mysqli($servidor, $usuario, $clave, $bd);
 if ($conn->connect_error) {
     die("La conexión falló: " . $conn->connect_error);
 }
-
-$insertar = "INSERT INTO `usuarios` (`nombre`, `direccion`, `email`, `telefono`, `estadoCivil`, `leer`, `cine`, `viajar`, `estado`, `id`) VALUES ('$nombre', '$direccion', '$email', '$telefono', '$estado_civil', '$leer', '$cine', '$viajar', '$estado')"; 
-$stmt->bind_param("sssssbbbs", $nombre, $direccion, $email, $telefono, $estado_civil, $leer, $cine, $viajar, $estado);
+$insertar = "INSERT INTO `usuarios` (`nombre`, `direccion`, `email`, `telefono`, `estadoCivil`, `leer`, `cine`, `viajar`, `estado`, `id`) VALUES (?,?,?,?,?,?,?,?,?)"; 
+$stmt->bind_param("sssssssss", $nombre, $direccion, $email, $telefono, $estado_civil, $leer, $cine, $viajar, $estado);
 
 if ($stmt->execute()) {
     echo "Registro completado";
